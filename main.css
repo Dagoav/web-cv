@@ -23,6 +23,7 @@ img:hover {
   transition: transform 1s;
   transform: scale(1.2);
 }
+
 .borde {
   border: 1px solid rgb(196, 196, 196);
 }
@@ -30,14 +31,34 @@ img:hover {
 .focus {
   font-size: 2rem;
   /* color: rgb(241, 198, 4); */
-  color: rgb(231, 192, 16);
-  transition: color 2s;
+  animation: text 4s infinite;
   cursor: pointer;
 }
+
 .focus:hover {
-  transition: color 2s;
-  color: rgb(223, 48, 25);
+  transform: scale(1.2);
 }
+
+@keyframes text {
+
+  0% {
+    color: rgb(81, 129, 201);
+  }
+
+  33% {
+    color: rgb(46, 83, 138);
+  }
+
+  66% {
+    color: rgb(12, 102, 143);
+  }
+
+  100% {
+    color: rgb(81, 129, 201);
+  }
+
+}
+
 .span {
   color: gray;
 }
